@@ -1,4 +1,3 @@
-/* Gaya umum untuk seluruh halaman */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -9,7 +8,6 @@ body {
     margin: 0;
 }
 
-/* Container utama untuk kalkulator */
 .calculator {
     background-color: #ffffff;
     border-radius: 15px;
@@ -18,7 +16,6 @@ body {
     width: 320px;
 }
 
-/* Tampilan layar untuk hasil dan input */
 .display {
     font-size: 2.5em;
     margin-bottom: 15px;
@@ -30,14 +27,12 @@ body {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid untuk tombol-tombol kalkulator */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
 
-/* Gaya umum untuk semua tombol */
 .buttons button {
     font-size: 1.5em;
     padding: 20px;
@@ -50,7 +45,6 @@ body {
     box-shadow: 0 5px 10px rgba(0, 123, 255, 0.2);
 }
 
-/* Efek hover dan fokus pada tombol */
 .buttons button:hover {
     background-color: #0069d9;
     box-shadow: 0 7px 14px rgba(0, 123, 255, 0.3);
@@ -62,7 +56,6 @@ body {
     transform: translateY(0);
 }
 
-/* Gaya khusus untuk tombol operator */
 .buttons .operator {
     background-color: #28a745;
 }
@@ -75,7 +68,6 @@ body {
     background-color: #1e7e34;
 }
 
-/* Gaya khusus untuk tombol sama dengan */
 .buttons .equals {
     background-color: #ffc107;
     grid-column: span 2;
@@ -89,7 +81,6 @@ body {
     background-color: #d39e00;
 }
 
-/* Gaya khusus untuk tombol clear */
 .buttons .clear {
     background-color: #dc3545;
     grid-column: span 2;
@@ -103,7 +94,6 @@ body {
     background-color: #bd2130;
 }
 
-/* Responsivitas untuk layar yang lebih kecil */
 @media (max-width: 400px) {
     .calculator {
         width: 90%;
